@@ -1591,11 +1591,11 @@ header .main-menu .menu_cart .check_out {
 }
 
 .banner-three .banner-item.slide-one {
-    background-image: url(../../images/banner/banner_07.jpg);
+    background-image: url(../../images/banner/banner_01.jpg);
 }
 
 .banner-three .banner-item.slide-two {
-    background-image: url(../../images/banner/banner_08.jpg);
+    background-image: url(../../images/banner/banner_02.jpg);
 }
 
 .banner-three .banner-item.slide-three {
@@ -1689,7 +1689,7 @@ header .main-menu .menu_cart .check_out {
 }
 
 .scroll-top:hover {
-    background-color: #7e007b;
+    background-color: #0532A8;
 }
 
 .scroll-top.open {
@@ -2742,7 +2742,7 @@ header .main-menu .menu_cart .check_out {
 }
 
 .gallery .gallery-item .gallery-overlay .bg {
-    background-color: rgba(7, 143, 203, .8);
+    background-color: rgba(7, 85, 203, 0.8);
     height: 100%;
     width: 100%;
 }
@@ -6581,4 +6581,7 @@ header.header-two ul.menu {
 }
 .left{
     margin-left: 42px;
+}
+.active-calss{
+    color:#0532A8;
 }
