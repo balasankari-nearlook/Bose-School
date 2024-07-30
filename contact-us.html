@@ -214,12 +214,18 @@
             </ul>
           </div>
           <div class="col-lg-8 col-md-6 col-xs-12">
-            <form class="contact-form">
+            <!-- <form class="contact-form">
               <input type="text" name="name" placeholder="Your Name" class="contact-input">
               <input type="email" name="email" placeholder="Your Email" class="contact-input">
               <textarea rows="5" class="contact-input">Your Messages</textarea>
               <input type="submit" name="submit" value="Send Message" class="contact-button">
-            </form>
+            </form> -->
+			<form class="contact-form" id="contact-form">
+				<input type="text" name="name" placeholder="Your Name" class="contact-input" id="name" required>
+				<input type="email" name="email" placeholder="Your Email" class="contact-input" id="email" required>
+				<textarea rows="5" class="contact-input" id="message" placeholder="Your Message" required></textarea>
+				<input type="submit" name="submit" value="Send Message" class="contact-button">
+			</form>
           </div>
         </div><!-- row -->
       </div><!-- container -->
@@ -560,6 +566,21 @@
 	});
   </script>
   
+
+  <script>
+	document.getElementById('contact-form').addEventListener('submit', function(event) {
+		event.preventDefault(); // Prevent the form from submitting the traditional way
+		
+		var name = document.getElementById('name').value;
+		var email = document.getElementById('email').value;
+		var message = document.getElementById('message').value;
+
+		var whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+		var whatsappLink = `https://wa.me/9994447855?text=${whatsappMessage}`;
+
+		window.open(whatsappLink, '_blank');
+	});
+</script>
   <script>
 	document.addEventListener('DOMContentLoaded', function () {
 	  setTimeout(function () {
