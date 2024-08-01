@@ -78,7 +78,7 @@
 	<!-- mobile menu start here -->
 	<div class="mobile-menu-area">
 		<div class="logo-area">
-			<a class="logo" href="index.html"><img src="images/logo/logo.png" alt="logo" class="img-responsive"></a>
+			<a class="logo" href="index.html"><img src="images/logo/logo.png" alt="logo" class="img-responsive" width="500"></a>
 			<button type="button" class="navbar-toggle collapsed d-md-none" data-toggle="collapse"
 				data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
@@ -92,7 +92,14 @@
 			<ul class="m-menu">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about-us.html">About Us</a></li>
-				<li><a href="activities.html">Activities</a></li>
+				<li class="dropdown-submenu">
+					<a href="#">Activities</a>
+					<ul class="mobile-submenu">
+					  <li><a href="curricular-activities.html">Curricular Activities</a></li>
+					  <li><a href="activities.html">Extra Curricular Activities</a></li>
+					</ul>
+				  </li>
+				<!-- <li><a href="activities.html">Activities</a></li> -->
 				<li><a href="gallery.html">Gallery</a></li>
 				<li><a href="contact-us.html">Contact Us</a></li>
 			</ul>
@@ -126,10 +133,10 @@
 		<div class="main-menu">
 			<div class="container">
 				<div class="row no-gutters">
-					<nav class="main-menu-area w-100">
+					<nav class="main-menu-area ">
 						<div class="logo-area">
 							<a class="" href="index.html"><img src="images/logo/logo.png" alt="logo"
-									class="img-responsive"></a>
+									class="img-responsive" width=""></a>
 							<button type="button" class="navbar-toggle collapsed d-md-none" data-toggle="collapse"
 								data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 								<span class="sr-only">Toggle navigation</span>
@@ -145,7 +152,16 @@
 							<ul class="menu">
 								<li clas="active-class"><a href="index.html" >Home</a></li>
 								<li><a href="about-us.html">About Us</a></li>
-								<li><a href="activities.html">Activities</a></li>
+								<!-- <li><a href="activities.html">Activities</a></li> -->
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									  aria-expanded="false">Activities <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="curricular-activities.html">Curricular Activities</a></li>
+									  <li><a href="activities.html">Extra Curricular Activities</a></li>
+									
+									</ul>
+								  </li>
 								<li><a href="gallery.html">Gallery</a></li>
 								<li><a href="contact-us.html">Contact Us</a></li>
 							</ul>
