@@ -1751,9 +1751,9 @@ header .main-menu .menu_cart .check_out {
     color: #ffc000;
 }
 
-.facility>div>div>div:nth-child(3) .facility-item span {
+/* .facility>div>div>div:nth-child(3) .facility-item span {
     background-color: #fc7f0c;
-}
+} */
 
 .facility>div>div>div:nth-child(3) .facility-item h4 {
     color: #fc7f0c;
@@ -6407,7 +6407,8 @@ nav.main-menu-area {
 }
 
 .logo-area {
-    width: 188px;
+    
+    width: 350px;
 }
 
 .logo-area button {
@@ -6431,7 +6432,7 @@ nav.main-menu-area {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row-reverse;
-    width: calc(100% - 188px);
+    width: calc(100% - 350px);
 }
 
 ul.menu-search-cart {
@@ -6448,7 +6449,7 @@ ul.menu {
     margin: 0;
     padding: 0;
     padding-right: 20px;
-    width: calc(100% - 100px);
+    /* width: calc(100% - 100px); */
     justify-content: flex-end;
 }
 
